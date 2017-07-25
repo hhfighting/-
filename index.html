@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+ <title>抽奖</title>
+ <script src="index.js"></script>
+ <!-- 这里是css部分 -->
+ <style>
+ #bg{
+ width: 650px;
+ height: 600px;
+ margin: 0 auto;
+ background: url(images/bg.jpg) no-repeat;
+ position: relative;
+ }
+ .message{
+  width: 200px;
+  height: 100px;
+  background-color: pink;
+  z-index: 10;
+  position: absolute;
+  top:220px;
+  left: 230px;
+  display:none;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+ }
+ img[src^="images/pointer"]{
+ position: absolute;
+ z-index: 5;
+ top: 155px;
+ left: 247px;
+ }
+ img[src^="images/turntable"]{
+ position: absolute;
+ z-index: 3;
+ top: 60px;
+ left: 116px;
+ transition: all 4s;
+ } 
+ </style>
+</head>
+<body>
+<!-- 这里是HTML结构部分 -->
+ <div id="bg">
+    <div class="message"></div>
+    <img src="images/pointer.png" height="228" width="174" id="pointer">
+    <img src="images/turntable.png" height="450" width="450" id="turntable">  
+ </div> 
+</body>
+</html> 
